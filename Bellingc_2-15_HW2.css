@@ -1,0 +1,83 @@
+body {
+    background-color:#F5E5C9;
+}
+
+
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper > * {
+    
+}
+.header {
+    background: #00b9ff
+}
+
+
+.main {
+    text-align: center;
+    background: #ed8a14;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+.nav {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  
+  list-style: none;
+  margin: 0; 
+  background: #00b9ff;
+}
+
+.nav a {
+  text-decoration: none;
+  display: block;
+  padding: 2em;
+  color: white;
+}
+
+.nav a:hover {
+  background: #1565C0;
+}
+/* this is copied from the flexbox website. Toying around with all of this. Trying to figure out what 
+ * this does. Doesn't seem to make any visible difference. Is it about mobile display?  */
+@media all and (max-width: 800px) {
+  .nav {
+    justify-content: space-around;
+  }
+}
+
+
+@media all and (max-width: 600px) {
+  .nav {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .nav a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .nav li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+.source {
+    display: flex;
+    flex-flow: row wrap;
+    
+    
+}
